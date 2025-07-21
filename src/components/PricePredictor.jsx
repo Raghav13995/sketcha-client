@@ -11,7 +11,7 @@ export default function PricePredictor() {
   useEffect(() => {
     async function fetchLocations() {
       try {
-        const res = await fetch("http://127.0.0.1:5000/get_location_names");
+        const res = await fetch("https://sketcha-modelserver.onrender.com/get_location_names");
         const data = await res.json();
         setLocations(data.locations);
       } catch (err) {
@@ -30,7 +30,7 @@ const handleEstimatePrice = async () => {
     formData.append("bath", bath);
     console.log("total_srft - ",squareFeet);
     console.log("location - ",location);
-    const res = await fetch("http://127.0.0.1:5000/predict_home_price", {
+    const res = await fetch("https://sketcha-modelserver.onrender.com/predict_home_price", {
       method: "POST",
       headers: {
         "Content-Type": "application/x-www-form-urlencoded",
