@@ -83,7 +83,7 @@ function Getstarted() {
       e.preventDefault();
 
       try {
-          const response = await fetch(`http://localhost:8000/api/v1/users/register`, {
+          const response = await fetch(`${process.env.REACT_APP_BACK_END}/api/v1/users/register`, {
 
               method: "POST",
               headers: {
