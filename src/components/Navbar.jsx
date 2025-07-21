@@ -26,12 +26,14 @@ function Navbar() {
                         <>
                         <div className='hover:scale-110'><a href="/Tenant">For Tenants</a></div>
                         <div className='hover:scale-110'><a href="/PropertyForm">For Owners</a></div>
+                        <div className='hover:scale-110'><a href="/price-calculator">Price-Calculator</a></div>
                         <div className='border-[1px] bg-black px-3 py-2 text-white rounded-lg hover:scale-110'><button><a href="/Logout">Logout</a></button></div>
                         </>
                     ):(
                         <>
                         <div className='hover:scale-110'><a href="/Getstarted">For Tenants</a></div>
                         <div className='hover:scale-110'><a href="/Getstarted">For Owners</a></div>
+                        <div className='hover:scale-110'><a href="/price-calculator">Price-Calculator</a></div>
                         <div className='border-[1px] bg-black px-3 py-2 text-white rounded-lg hover:scale-110'><button><a href="/Getstarted">Get Started</a></button></div>
                         </>
                     )}
@@ -51,6 +53,10 @@ function Navbar() {
                         </div>
                         <div>
                             <a href="/PropertyForm" className=' hover:scale-110'>For owners</a>
+                            <hr className='border-gray-600 mt-2' />
+                        </div>
+                        <div>
+                            <a href="/price-calculator" className=' hover:scale-110'>Price-Calculator</a>
                             <hr className='border-gray-600 mt-2' />
                         </div>
                         <div className='flex justify-center mt-2'>
